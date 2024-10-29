@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ArrayNilai13 {
+public class ModifNilai13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] nilaiAkhir = new int[10];
@@ -9,11 +9,13 @@ public class ArrayNilai13 {
             System.out.print("Masukkan nilai akhir ke-" + i + " : ");
             nilaiAkhir[i] = sc.nextInt();
         }
-
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            if (nilaiAkhir[i] > 70) { 
-                System.out.println("Nilai akhir ke-" + i + " adalah " + nilaiAkhir[i]);  
+            if (nilaiAkhir[i] >= 70) {
+                System.out.println("Nilai akhir ke-" + i + " lulus");
+            } else {
+                System.out.println("Nilai akhir ke-" + i + " tidak lulus");
             }
         }
+
     }
 }

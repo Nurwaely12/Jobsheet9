@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class PencariMenuKafe13 {
     public static void main(String[] args) {
         String[] menu = {
